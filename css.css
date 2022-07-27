@@ -51,8 +51,22 @@
     cursor: pointer;
 }
 
+.borrar{ background-color: rgba(200, 38, 38, 0.774);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 208px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;}
+
 .enviar:hover{
     background-color: grey;
+    color: white;
+}
+
+.borrar:hover{
+    background-color: rgba(227, 6, 6, 0.374);
     color: white;
 }
 
