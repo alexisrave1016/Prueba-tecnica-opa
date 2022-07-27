@@ -1,8 +1,10 @@
+// const prueba=parseInt(document.getElementsByClassName('input').value);
+// console.log('malparido hp'+ prueba)
 const miClick=()=>{
     const numeroImportado= document.querySelector(".input").value;
             document.querySelector(".resultado").innerHTML=numeroImportado; 
             const numero=parseInt(numeroImportado)
-        
+           
             if(numeroImportado==''){
                 document.querySelector('.resultado').innerHTML=('Ingrese número');
             }
@@ -18,26 +20,25 @@ const miClick=()=>{
                     suma += i;
                 }
             }
-        return suma != 0 && suma== numero;       
+            
+            if(suma != 0 && suma== numero){
+                document.querySelector('.resultado').innerHTML=(`El número ${numero} es perfecto`)
+            }else{
+                document.querySelector('.resultado').innerHTML=(`El número ${numero} NO es perfecto`)
+            }  
 
     }
-
-try{console.log(numero)
-}catch(e){
-    console.log(`Error:${e.message}`)
-} 
+    
+    
 
 
 
 
+// aca estoy medio bien
 
 
 
-//     const numeroImportado= document.querySelector(".input").value;
-//             document.querySelector(".resultado").innerHTML=numeroImportado;  
 
-//     return numeroImportado;       
-// }
 
 
 
@@ -63,9 +64,14 @@ try{console.log(numero)
 
 
 
-// try{console.log(numeroPerfecto(3))
+// try{console.log(numeroPerfecto(6))
 // }catch(e){
-//     console.log(`Error:${e.message}`)
+//     console.log(`Error:`)
+// }
+
+// try{console.log(numeroPerfecto(28))
+// }catch(e){
+//     console.log(`Error:`)
 // } 
 
 
